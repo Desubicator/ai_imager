@@ -7,5 +7,5 @@ export function getRandomPrompt(prompt) {
         return getRandomPrompt(prompt);
     }
 
-    return randPrompt; ];
+    return randPrompt;
 }
