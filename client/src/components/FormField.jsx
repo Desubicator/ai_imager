@@ -23,7 +23,7 @@ const FormField = ({labelName, type, placeholder, value, handleChange, isSurpris
         id={name}
         placeholder={placeholder}
         value={value}
-        onchange={handleChange}
+        onChange={handleChange}
         required
         className='bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:border-[#4649ff] outline-none block w-full p-3'
       />
