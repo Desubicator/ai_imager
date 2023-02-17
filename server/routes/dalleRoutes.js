@@ -1,6 +1,6 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
-import {Configuration, OpenAIApi } from "openai"
+import { Configuration, OpenAIApi } from "openai"
 
 dotenv.config();
 
@@ -10,10 +10,10 @@ const config = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 })
 
-const openai = new OpenAIApi(config);
+const openai = new OpenAIApi(config); 
 
 router.route('/').get((req, res) => {
-    res.send('Hello from DALL-E');
-})
+    res.send('Hello world');
+});
 
 export default router;
