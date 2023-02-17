@@ -52,7 +52,7 @@ const CreatePost = () => {
           headers: { 
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({form})
+          body: JSON.stringify(form)
         })
 
         await response.json();
@@ -62,8 +62,9 @@ const CreatePost = () => {
       } finally{
         setLoading(false)
       }
+
     } else {
-      alert("Please enter a prompt.")
+      alert("Please generate an Image.")
     }
   }
 

@@ -25,12 +25,11 @@ const Home = () => {
       setLoading(true);
 
       try {
-        const response = await fetch("http://localhost:8080/api/v1/posts", {
+        const response = await fetch("http://localhost:8080/api/v1/post", {
           method: "GET",
           headers: { 
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({form})
         })
 
       if(response.ok){
@@ -44,7 +43,9 @@ const Home = () => {
       } finally {
         setLoading(false)
       }
-    }}, []);
+    }
+    fetchPosts();
+  }, []);
 
   return (
     <section className='max-w-7xl mx-auto'>
