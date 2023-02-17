@@ -40,8 +40,8 @@ const CreatePost = () => {
   }
 }
 
-  const handleSubmit = () => {
-
+  const handleSubmit = async (e) => {
+    e.preventDe
   }
 
   const handleChange = (e) => {
